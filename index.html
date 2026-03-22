@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Neon & Memory: 2700年のノスタルジア - マルチエンディング型SFテキストアドベンチャー">
+  <title>Neon & Memory: 2700年のノスタルジア</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game">
+    <!-- 背景Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- CRT & ビネットエフェクト -->
+    <div id="vignette"></div>
+    <div id="crt-overlay"></div>
+
+    <!-- タイトル画面 -->
+    <div id="title-screen">
+      <div class="title-main">Neon &amp; Memory</div>
+      <div class="title-sub">2700年のノスタルジア</div>
+      <div class="title-start">── Click to Start ──</div>
+    </div>
+
+    <!-- テキストウィンドウ -->
+    <div id="text-window">
+      <div id="speaker-name"></div>
+      <div id="text-content"></div>
+      <div id="click-indicator"></div>
+    </div>
+
+    <!-- 選択肢コンテナ -->
+    <div id="choices-container"></div>
+
+    <!-- エンディングオーバーレイ -->
+    <div id="ending-overlay" class="ending-overlay">
+      <div id="ending-title"></div>
+      <div id="ending-message"></div>
+      <button id="restart-btn">もう一度始める</button>
+    </div>
+  </div>
+
+  <!-- Scripts (順序が重要) -->
+  <script src="js/audio.js"></script>
+  <script src="js/scenario.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
