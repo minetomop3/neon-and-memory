@@ -23,6 +23,33 @@
       <div class="title-start">── Click to Start ──</div>
     </div>
 
+    <!-- HUD (Karma表示 & ボタン類) -->
+    <div id="hud">
+      <!-- Karma表示 -->
+      <div id="karma-display">
+        <div class="karma-row">
+          <span class="karma-label logic-label">LOGIC</span>
+          <div class="karma-bar-bg"><div id="karma-logic-bar" class="karma-bar logic-bar"></div></div>
+          <span class="karma-num" id="karma-logic-val">0</span>
+        </div>
+        <div class="karma-row">
+          <span class="karma-label humanity-label">HEART</span>
+          <div class="karma-bar-bg"><div id="karma-humanity-bar" class="karma-bar humanity-bar"></div></div>
+          <span class="karma-num" id="karma-humanity-val">0</span>
+        </div>
+      </div>
+
+      <!-- Save / Load / Backlog ボタン -->
+      <div id="hud-buttons">
+        <button id="save-btn" class="hud-btn">SAVE</button>
+        <button id="load-btn" class="hud-btn disabled">LOAD</button>
+        <button id="backlog-btn" class="hud-btn">LOG</button>
+      </div>
+    </div>
+
+    <!-- フラッシュメッセージ -->
+    <div id="flash-message"></div>
+
     <!-- テキストウィンドウ -->
     <div id="text-window">
       <div id="speaker-name"></div>
@@ -32,6 +59,15 @@
 
     <!-- 選択肢コンテナ -->
     <div id="choices-container"></div>
+
+    <!-- バックログパネル -->
+    <div id="backlog-panel">
+      <div id="backlog-header">
+        <span>MESSAGE LOG</span>
+        <button id="backlog-close-btn">✕</button>
+      </div>
+      <div id="backlog-content"></div>
+    </div>
 
     <!-- エンディングオーバーレイ -->
     <div id="ending-overlay" class="ending-overlay">

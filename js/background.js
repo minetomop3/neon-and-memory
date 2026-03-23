@@ -65,6 +65,22 @@ const Background = (() => {
       neon2: '#ff88cc',
       neon3: '#ffdd88',
       ground: [30, 10, 35]
+    },
+    slum: {
+      sky: [18, 4, 4],
+      rain: 'rgba(255, 100, 60, 0.25)',
+      neon1: '#ff4400',
+      neon2: '#ff9933',
+      neon3: '#cc2244',
+      ground: [25, 6, 4]
+    },
+    syndicate: {
+      sky: [8, 0, 28],
+      rain: 'rgba(160, 80, 255, 0.2)',
+      neon1: '#cc00ff',
+      neon2: '#8844ff',
+      neon3: '#ff00cc',
+      ground: [12, 2, 35]
     }
   };
 
